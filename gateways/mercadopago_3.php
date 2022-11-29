@@ -1,14 +1,13 @@
 <?php
-require_once(__DIR__ . "/MercadoPago_Lib/mercadopago_config.php");
 if (!defined("WHMCS")) {
     exit("This file cannot be accessed directly");
 }
-
+require_once(__DIR__ . "/MercadoPago_Lib/mercadopago_config.php");
 function MercadoPago_3_config()
 {
     $modulo = "mercadopago_3";
     $nombre = "MercadoPago 3";
-    $obj = new MercadopagoConfig($nombre, $modulo);
+    $obj = new MercadopagoConfig($nombre,$modulo);
     $salida = $obj->getConfigModulo();
     return $salida;
 }
