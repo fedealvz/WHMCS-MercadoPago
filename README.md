@@ -27,3 +27,7 @@ Se puede forkear y editar sin ninguna restricción.
 
 Subir o reemplazar los archivos a los correspondientes directorios de WHMCS.
 Si se reemplaza por el módulo comercial discontinuado, conservará todas las configuraciones y tablas propias de la base de datos que usa el módulo intactas.
+
+## Autor
+
+👨🏼‍💻️ [Federico Álvarez](https://federicoalvarez.net)
