@@ -2,9 +2,7 @@
 function traduccion($idioma, $texto)
 {
     //es-AR
-    $textos["ar"]["mpconfig_1"] = "Versión";
-    $textos["ar"]["mpconfig_2"] = "MUY IMPORTANTE";
-    $textos["ar"]["mpconfig_3"] = "https://github.com/fedealvz/WHMCS-MercadoPago";
+    $textos["ar"]["mpconfig_2"] = "Repositorio Oficial";    
     $textos["ar"]["mpconfig_4"] = "Ayuda";
     $textos["ar"]["mpconfig_5"] = "Obtener datos según país";
     $textos["ar"]["mpconfig_6"] = "Cerrar";
@@ -18,7 +16,7 @@ function traduccion($idioma, $texto)
     $textos["ar"]["mpconfig_14"] = "Ej. Factura, Boleta, Orden de Pago, etc.<br>Aparecerá acompañado del nombre de la empresa y el número de factura, por ej: Empresa XXXX - Orden de Pago Nro. 9999";
     $textos["ar"]["mpconfig_15"] = "Texto del botón de pago";
     $textos["ar"]["mpconfig_16"] = "Pagar Ahora";
-    $textos["ar"]["mpconfig_17"] = "Color del botón";
+    $textos["ar"]["mpconfig_17"] = "Color del botón"; 
     $textos["ar"]["mpconfig_18"] = "Celeste";
     $textos["ar"]["mpconfig_19"] = "Gris";
     $textos["ar"]["mpconfig_20"] = "Verde";
@@ -87,9 +85,7 @@ function traduccion($idioma, $texto)
     $textos["ar"]["mercadopago_activate_1"] = "Activación exitosa: Haga clic en el botón de configuración para modificar las opciones del módulo.";
     $textos["ar"]["mercadopago_deactivate_1"] = "El módulo MercadoPago se desactivó correctamente.";
     //en-US
-    $textos["us"]["mpconfig_1"] = "Version";
-    $textos["us"]["mpconfig_2"] = "WARNING";
-    $textos["us"]["mpconfig_3"] = "https://github.com/fedealvz/WHMCS-MercadoPago";
+    $textos["us"]["mpconfig_2"] = "Official Repository";    
     $textos["us"]["mpconfig_4"] = "Help";
     $textos["us"]["mpconfig_5"] = "Show data by country";
     $textos["us"]["mpconfig_6"] = "Close";
@@ -172,9 +168,7 @@ function traduccion($idioma, $texto)
     $textos["us"]["mercadopago_activate_1"] = "Successful activation: Click the configuration button to modify the module options.";
     $textos["us"]["mercadopago_deactivate_1"] = "The MercadoPago module was successfully disabled.";
     //pt-BR
-    $textos["br"]["mpconfig_1"] = "Versão";
-    $textos["br"]["mpconfig_2"] = "MUITO IMPORTANTE";
-    $textos["br"]["mpconfig_3"] = "https://github.com/fedealvz/WHMCS-MercadoPago";
+    $textos["br"]["mpconfig_2"] = "Repositório Oficial";    
     $textos["br"]["mpconfig_4"] = "Ajuda";
     $textos["br"]["mpconfig_5"] = "Obtenha dados por país";
     $textos["br"]["mpconfig_6"] = "Fechar";
