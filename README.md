@@ -1,6 +1,6 @@
 # WHMCS-MercadoPago
 
-Gateway de Mercado Pago para WHMCS
+Gateway de pago de WHMCS para utilizar con Mercado Pago
 
 ## Features
 
@@ -18,9 +18,11 @@ Este repo es un remake de un módulo comercial discontinuado, basado en su últi
 
 El módulo es libre y de código abierto. No tiene ningún tipo de licencia, soporte comercial, versión paga ni donaciones.
 
+Este módulo no pertenece a Mercado Pago. Mercado Pago no recomienda, refiere, controla, revisa, patrocina, aprueba, administra, garantiza o de alguna manera avala este módulo.
+
 ## Soporte comunitario
 
-En caso de bugs, mejoras o cualquier duda, por favor utilizar Issues o Pull Requests del repo de Github.
+En caso de bugs, mejoras o cualquier duda, por favor utilizar Issues o Pull Requests del repositorio original de Github.
 Se puede forkear y editar sin ninguna restricción.
 
 ## Instalación
