@@ -1,9 +1,9 @@
 <?php
 include "../../../init.php";
-include ROOTDIR . DIRECTORY_SEPARATOR . "includes/functions.php";
-include ROOTDIR . DIRECTORY_SEPARATOR . "includes/gatewayfunctions.php";
-include ROOTDIR . DIRECTORY_SEPARATOR . "includes/invoicefunctions.php";
-require_once "../MercadoPago_Lib/mercadopago_config.php";
+include ROOTDIR . "/includes/functions.php";
+include ROOTDIR . "/includes/gatewayfunctions.php";
+include ROOTDIR . "/includes/invoicefunctions.php";
+require_once(ROOTDIR . "/modules/gateways/MercadoPago_Lib/mercadopago_config.php");
 $gatewayModule = "mercadopago_6";
 $gateway = new WHMCS\Module\Gateway();
 if (!$gateway->isActiveGateway($gatewayModule) || !$gateway->load($gatewayModule)) {

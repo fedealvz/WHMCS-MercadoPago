@@ -2,7 +2,7 @@
 if (!defined("WHMCS")) {
     exit("This file cannot be accessed directly");
 }
-require_once(__DIR__ . "/../modules/gateways/MercadoPago_Lib/mercadopago_config.php");
+require_once(ROOTDIR . "/modules/gateways/MercadoPago_Lib/mercadopago_config.php");
 function mercadopago_config()
 {
     $obj = new MercadopagoConfig();
