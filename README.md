@@ -20,7 +20,7 @@ Gateway de pago de WHMCS para utilizar con Mercado Pago
 - Multi-idioma
 - Posibilidad de seleccionar los medios de pago admitidos en Mercado Pago
 - Callback (IPN)
-- Compatible con WHMCS 7 y 8
+- Compatible con WHMCS 8
 
 ## Disclaimer
 
