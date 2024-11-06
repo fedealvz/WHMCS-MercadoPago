@@ -7,7 +7,7 @@ function mercadopago_config()
 {
     $obj = new MercadopagoConfig();
     $idioma = $obj->checkIdioma();
-    return array("name" => "MercadoPago", "description" => traduccion($idioma, "mercadopago_config_1"), "author" => "MercadoPago", "language" => "spanish", "version" => "17-remake", "fields" => array("licencia" => array("FriendlyName" => traduccion($idioma, "mercadopago_config_2"), "Type" => "text", "Size" => "25", "Description" => ""), "verificador" => array("FriendlyName" => traduccion($idioma, "mercadopago_config_3"), "Type" => "textarea", "Rows" => "6", "Cols" => "60", "Description" => traduccion($idioma, "mercadopago_config_4")), "idioma" => array("FriendlyName" => traduccion($idioma, "mercadopago_config_5"), "Type" => "dropdown", "Options" => array("ar" => "Español", "br" => "Português", "us" => "English"), "Default" => "ar", "Description" => traduccion($idioma, "mercadopago_config_6"))));
+    return array("name" => "MercadoPago", "description" => traduccion($idioma, "mercadopago_config_1"), "author" => "MercadoPago", "language" => "spanish", "version" => "17.3", "fields" => array("licencia" => array("FriendlyName" => traduccion($idioma, "mercadopago_config_2"), "Type" => "text", "Size" => "25", "Description" => ""), "verificador" => array("FriendlyName" => traduccion($idioma, "mercadopago_config_3"), "Type" => "textarea", "Rows" => "6", "Cols" => "60", "Description" => traduccion($idioma, "mercadopago_config_4")), "idioma" => array("FriendlyName" => traduccion($idioma, "mercadopago_config_5"), "Type" => "dropdown", "Options" => array("ar" => "Español", "br" => "Português", "us" => "English"), "Default" => "ar", "Description" => traduccion($idioma, "mercadopago_config_6"))));
 }
 function mercadopago_activate()
 {
