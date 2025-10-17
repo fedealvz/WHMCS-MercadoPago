@@ -320,6 +320,8 @@ class MercadopagoConfig
                         $results = localAPI($command, $postData, $adminUsername);
                         $texto_log = "\r\n                    " . traduccion($idioma, "mpconfig_56") . ": " . $nrofactura . "\r\n                    " . traduccion($idioma, "mpconfig_57") . ": " . $GATEWAY["name"] . "\r\n                    " . traduccion($idioma, "mpconfig_58") . ": " . $mp_transaccion . "\r\n                    " . traduccion($idioma, "mpconfig_60") . ": " . $datosdelpago["authorization_code"] . "\r\n                    " . traduccion($idioma, "mpconfig_61") . ": " . $datosdelpago["date_approved"] . "\r\n                    " . traduccion($idioma, "mpconfig_62") . ": " . $datosdelpago["payment_type_id"] . " - " . $datosdelpago["payment_method_id"] . "\r\n                    " . traduccion($idioma, "mpconfig_63") . ": " . $datosdelpago["currency_id"] . "\r\n                    " . traduccion($idioma, "mpconfig_64") . ": " . $datosdelpago["transaction_details"]["total_paid_amount"] . "\r\n                    " . traduccion($idioma, "mpconfig_65") . ": " . $datosdelpago["transaction_details"]["net_received_amount"] . "\r\n                    " . $conversionlog;
                         logTransaction($GATEWAY["name"], $texto_log, traduccion($idioma, "mpconfig_66") . " [" . $nrofactura . "]");
+                        //DETALLE DE LA API DE MP
+                        logTransaction($GATEWAY["name"], "API Payment MP: " .  var_export($datosdelpago, true), "Detalle del pago aprobado.");
                         $resultado = Capsule::table("tbltransaction_history")->where("transaction_id", "=", $mp_transaccion)->delete();
                     }
                     $resultado = Capsule::table("bapp_mercadopago")->where("id", "=", $mp_id)->delete();
@@ -330,6 +332,8 @@ class MercadopagoConfig
                         $results = localAPI($command, $postData, $adminUsername);
                         $texto_log = "\r\n                    " . traduccion($idioma, "mpconfig_56") . ": " . $datosdelpago["external_reference"] . "\r\n                    " . traduccion($idioma, "mpconfig_57") . ": " . $GATEWAY["name"] . "\r\n                    " . traduccion($idioma, "mpconfig_58") . ": " . $mp_transaccion . "\r\n                    " . traduccion($idioma, "mpconfig_62") . ": " . $datosdelpago["payment_type_id"] . " - " . $datosdelpago["payment_method_id"];
                         logTransaction($GATEWAY["name"], $texto_log, traduccion($idioma, "mpconfig_76") . " [" . $datosdelpago["external_reference"] . "]");
+                        //DETALLE DE LA API DE MP
+                        logTransaction($GATEWAY["name"], "API Payment MP: " .  var_export($datosdelpago, true), "Detalle del pago aprobado.");
                         Capsule::table("tbltransaction_history")->insert(array("invoice_id" => $datosdelpago["external_reference"], "gateway" => $GATEWAY["name"], "updated_at" => date("Y-m-d H:i:s"), "transaction_id" => $mp_transaccion, "remote_status" => traduccion($idioma, "mpconfig_76"), "description" => $datosdelpago["payment_type_id"] . " - " . $datosdelpago["payment_method_id"]));
                     }
                     $resultado = Capsule::table("bapp_mercadopago")->where("id", "=", $mp_id)->delete();
